@@ -10,7 +10,7 @@ getwd()
 #### Chargement données LINUX ####
 # ---------- Chargement des polygones
 CR01 <- rgdal::readOGR("/home/claire/Bureau/PostDoc_COLEO/GitHub/Richesse_Qc/CERQ_SHP/", layer = "CR_NIV_01_S") # Provincial
-CR01 <- rgdal::spTransform(CR01, CRS("+proj=longlat +datum=WGS84 +no_defs"))
+CR01 <- sp::spTransform(CR01, CRS("+proj=longlat +datum=WGS84 +no_defs"))
 
 # ---------- Chargement des occurences d'espèces
 occ <- readRDS("/home/claire/Bureau/PostDoc_COLEO/GitHub/Richesse_Qc/tmp.rds")
