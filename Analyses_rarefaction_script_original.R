@@ -12,9 +12,11 @@ library(iNEXT)
 # Charger les données
 
 #================================================================================
+# WINDOWS
+data = readRDS("./source_data/tmp.rds")
 
+# LINUX
 data = readRDS("./tmp.rds")
-
 #================================================================================
 
 # Subset selon les contraintes imposées par le menu
